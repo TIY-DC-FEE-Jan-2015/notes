@@ -1,0 +1,26 @@
+.news-section {
+  font-family: Arial;
+  display: inline-block;
+  width: 200px;
+}
+
+img {
+  display: block;
+  width: 200px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: maroon;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.link {
+  margin-bottom: 10px;
+}

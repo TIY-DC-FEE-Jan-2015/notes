@@ -1,0 +1,28 @@
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.overlay-text {
+  background: black;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  top: 207px;
+  opacity: .8;
+  font-size: 16px;
+  width: 400px;
+  box-sizing: border-box;
+  font-weight: bold
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 400px;
+  font-family: Helvetica;
+}

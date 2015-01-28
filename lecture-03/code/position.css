@@ -1,0 +1,36 @@
+.box {
+  width: 200px;
+  border: solid 1px black;
+  height: 100px;
+  background: white;
+}
+
+.absolute {
+  position: absolute;
+  background: orange;
+  right: 20px;
+  top: 500px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background: green;
+}
+
+.relative {
+  background: blue;
+  position: relative;
+  left: 10px;
+  top: 25px;
+}
+
+.static {
+  background: red;
+}
+
+.container {
+  height: 2000px;
+  background: gray;
+}

@@ -1,0 +1,13 @@
+.hoverable {
+  transition: all 20s;
+}
+
+.hoverable:hover {
+  color: blue;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+body {
+  font-family: "Open Sans";
+}

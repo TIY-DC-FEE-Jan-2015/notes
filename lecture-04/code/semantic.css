@@ -1,0 +1,11 @@
+.highlight {
+  margin: 30px;
+}
+
+.styled-button {
+  margin-top: 20px;
+  color: white;
+  background: red;
+  border-radius: 8px;
+  padding: 8px;
+}

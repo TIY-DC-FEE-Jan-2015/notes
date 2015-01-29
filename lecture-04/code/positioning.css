@@ -1,0 +1,27 @@
+.demo {
+  width: 300px;
+  height: 200px;
+  background: green;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 10px black;
+  padding: 25px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.b {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+}
+
+.r {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.a {
+  position: absolute;
+}

@@ -18,14 +18,15 @@ By the end of this week, students should be comfortable with:
 * Basic JavaScript types and control flow
 * JavaScript iteration
 * JavaScript functional programming
-* DOM traversal, with and without jQuery
 * JavaScript testing and Test-Driven Development basics
+* JavaScript functional programming
 * Completing basic JavaScript interview-esque katas
 
 #### Week 3 (Feb 9-13)
 
 By the end of this week, students should be comfortable with:
 
+* DOM traversal, with and without jQuery
 * Responsive web design
 * Sass and SCSS
 * Yeoman
@@ -38,7 +39,6 @@ By the end of this week, students should be comfortable with:
 
 By the end of this week, students should be comfortable with:
 
-* JavaScript functional programming
 * Underscore chaining and native FP fallbacks
 * Using functional programming to traverse large datasets
 * HTTP methods and URLs

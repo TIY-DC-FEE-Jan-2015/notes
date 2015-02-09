@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .inputBox {
+        background: #bada55;
+      }
+
+      .bigRow {
+        margin: 20px;
+      }
+
+      .bigger {
+        font-size: 100px;
+        transition: all 20s;
+      }
+
+      .invalid {
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="theForm">
+      <div class="row">
+        <label>
+          Person's Name
+          <input type="text" id="nameInput" />
+        </label>
+      </div>
+      
+      <div class="row">
+        <label>
+          Person's Birthdate
+          <input type="date" id="dateInput" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Person's Occupation
+          <div>
+            <input type="radio" name="occupation" value="Teacher"> Teacher 
+          </div>
+          <div>
+            <input type="radio" name="occupation" value="Student"> Student 
+          </div>
+          <div>
+            <input type="radio" name="occupation" value="TA"> Katherine 
+          </div>
+        </label>
+      </div>
+
+      <button id="submitButton">Submit</button>
+
+      <button id="boringButton">Get rid of Kyle's stupid events</button>
+
+      <script src="libs/jquery.js"></script>
+      <script src="libs/underscore.js"></script>
+
+      <script>
+
+        var checkOneCharacter = function(letter) {
+
+          var charCode = letter.charCodeAt(0)
+
+          // Check to see if this is valid
+          // e.g. is not a number
+          if (charCode >= 48 && charCode <= 57) {
+            // This is a number, so
+            return false
+          }
+
+          // Otherwise,
+          return true;
+
+        }
+
+        var checkAllCharacters = function(string) {
+          
+          return _.every(string, checkOneCharacter)
+
+        }
+
+        $("#nameInput").on("keyup", function(evt){
+
+          if (checkAllCharacters($("#nameInput").val())) {
+            $("#nameInput").removeClass("invalid");
+            return
+          }
+
+          $("#nameInput").addClass("invalid");
+
+        });
+
+        $("#submitButton").on("click", function(evt){
+          
+          var name = $("#nameInput").val();
+          var date = $("#dateInput").val();
+          var occupation = $("#occupationInput").val();
+
+          alert("Your name is " + name + " and your birthdate is " + date + " and you are a " + occupation);
+
+          evt.preventDefault()
+
+        })
+
+        $("#submitButton").on("mouseover", function(evt){
+
+          $("#submitButton").addClass("bigger");
+
+        });
+
+        $("#submitButton").on("mouseout", function(evt){
+
+          $("#submitButton").removeClass("bigger");
+
+        });
+
+        $("#boringButton").on("click", function(evt){
+
+          $("#submitButton").off("mouseover");
+          $("#submitButton").off("mouseout");
+
+          evt.preventDefault()
+
+        });
+      </script>
+
+    </form>
+  </body>
+</html>

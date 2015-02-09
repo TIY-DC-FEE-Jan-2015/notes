@@ -1,0 +1,14 @@
+.message {
+  width: 60%;
+}
+
+input[type='text'] {
+  border: solid 1px black;
+}
+
+.chatWindow {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px gray;
+  height: 200px;
+}

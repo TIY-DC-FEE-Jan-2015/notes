@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .inputBox {
+        background: #bada55;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="theForm">
+      <div class="row">
+        <label>
+          Person's Name
+          <input type="text" id="nameInput" />
+        </label>
+      </div>
+      
+      <div class="row">
+        <label>
+          Person's Birthdate
+          <input type="date" id="dateInput" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Person's Occupation
+          <select id="occupationInput">
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+            <option value="su">Su</option>
+          </select>
+        </label>
+      </div>
+
+      <button id="submitButton">Submit</button>
+
+      <script>
+        var nameInput = document.getElementById("nameInput")
+        
+        var submitButton = document.getElementById("submitButton")
+
+        submitButton.onclick = function(evt) {
+          evt.preventDefault();
+
+          var name = document.getElementById("nameInput").value;
+          var date = document.getElementById("dateInput").value;
+          var occupation = document.getElementById("occupationInput").value;
+
+          alert("Your name is " + name + " and your birthdate is " + date + " and you are a " + occupation);
+        }
+
+        nameInput.onchange = function(evt) {
+          alert("something changed!")
+        }
+      </script>
+    </form>
+  </body>
+</html>

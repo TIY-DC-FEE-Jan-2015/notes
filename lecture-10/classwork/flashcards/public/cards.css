@@ -1,0 +1,57 @@
+.entry .row {
+  margin: 5px;
+}
+
+.entry {
+  padding-bottom: 10px;
+  border-bottom: solid 1px gray;
+}
+
+.flashcard {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  border: solid 1px black;
+  height: 150px;
+  vertical-align: top;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url("notecard.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.back, .back-overlay {
+  display: none;
+}
+
+.front, .back {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.flashcard.flipped {
+  
+}
+
+.flashcard.flipped .front {
+  display: none;
+}
+
+.flashcard.flipped .back, .flashcard.flipped .back-overlay {
+  display: block;
+}
+
+.back-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: red;
+  top: 0;
+  left: 0;
+  opacity: .09;
+}
+

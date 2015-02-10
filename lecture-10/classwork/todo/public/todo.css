@@ -1,0 +1,21 @@
+.taskItem {
+  padding: 5px;
+  border: solid 1px gray;
+  border-bottom: none;
+  font-size: 18px;
+}
+
+.taskItem:last-child {
+  border-bottom: solid 1px gray;
+}
+
+.todo {
+  margin: 20px;
+  list-style: none;
+  -webkit-padding-start: 0px;
+}
+
+.taskItem.complete {
+  color: red;
+  text-decoration: line-through;
+}

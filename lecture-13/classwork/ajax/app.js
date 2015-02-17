@@ -27,7 +27,7 @@ app.post("/user", function(req, res){
 
     users.push(user)
 
-    res.json(200, user);
+    res.json(201, user);
     return
   }
 

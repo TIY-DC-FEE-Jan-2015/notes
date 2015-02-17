@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <div id="instructions" class="instructions">
+      <ol>
+        <li>Put your mouse in that box</li>
+        <li>Don't let your mouse leave that box</li>
+      </ol>
+     <!-- <div class="button" id="instructionsButton">
+        Let's Go!
+      </div> -->
+    </div>
+
+    <div id="menu" class="menu">
+      <div class="scoreReport">
+        Your score was <span id="menuText"></span> seconds.
+      </div>
+      <div class="buttons">
+        <div class="button" id="menuButton">Play Again?</div>
+      </div>
+    </div>
+
+    <div id="background" class="background"></div>
+    <div id="mouseContainer" class="mouseContainer"></div>
+
+    <div class="currentScore">
+      Current Score: <span id="currentText">0</span> seconds
+    </div>
+
+    <div class="highScore">
+      High Score: <span id="scoreText">0</span> seconds
+    </div>
+
+    <script src="libs/jquery.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

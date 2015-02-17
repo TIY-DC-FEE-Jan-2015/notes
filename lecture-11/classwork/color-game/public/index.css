@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: gray;
+  height: 100vh;
+}
+
+.mouseContainer {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  height: 15%;
+  width: 15%;
+  background: white;
+  border: solid 4px black;
+  border-radius: 10px;
+  opacity: .7;
+  z-index: 1;
+
+  transition: all 200ms;
+}
+
+.currentScore, .highScore {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
+  background: white;
+  border-top: solid 4px black;
+  opacity: .7;
+  padding: 5px;
+}
+
+.currentScore {
+  left: 0;
+  border-right: solid 4px black;
+  border-top-right-radius: 10px;
+}
+
+.highScore {
+  right: 0;
+  border-left: solid 4px black;
+  border-top-left-radius: 10px;
+}
+
+.menu {
+  position: absolute;
+  height: 40%;
+  width: 70%;
+  background: white;
+  border: solid 4px black;
+  opacity: .9;
+  padding: 5px;
+  border-radius: 10px;
+  top: 30%;
+  left: 15%;
+  z-index: 2;
+  display: none;
+  font-family: Helvetica, sans-serif;
+}
+
+.scoreReport {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button {
+  width: 200px;
+  background: rgb(18, 10, 143);
+  color: white;
+  margin: 0px auto;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+  border: solid 4px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(85, 144, 217);
+}
+
+.instructions {
+  position: absolute;
+  height: 40%;
+  width: 70%;
+  background: white;
+  border: solid 4px black;
+  opacity: .9;
+  padding: 5px;
+  border-radius: 10px;
+  top: 30%;
+  left: 15%;
+  z-index: 2;
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+ol {
+  margin-left: 40px;
+  margin-top: 10px;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+

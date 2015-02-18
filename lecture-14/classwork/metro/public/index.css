@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  border: solid 10px gray;
+  background: black;
+  margin: 20px;
+}
+
+.headline {
+  color: RGB(217, 28, 32);
+  font-weight: bold;
+  font-size: 24px;
+  font-family: monospace;
+}
+
+.train {
+  color: RGB(240, 245, 132);
+  font-weight: bold;
+  font-size: 24px;
+  font-family: monospace;
+}
+
+.field {
+  display: inline-block;
+}
+
+.line {
+  width: 60px;
+}
+
+.cars {
+  width: 60px;
+}
+
+.destination {
+  width: 200px;
+}
+
+.time {
+  width: 100px;
+
+}

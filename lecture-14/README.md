@@ -15,3 +15,8 @@
     * Dynamic callbacks - `success: callback`
     * Dynamic callbacks execute a variable function
     * Example of `passIn3(doubler)` and `passIn3(tripler)`
+
+#### Additional Resources:
+
+* [JSPerf examples](http://www.sitepoint.com/jsperf1/)
+* [WMATA API](https://developer.wmata.com/)

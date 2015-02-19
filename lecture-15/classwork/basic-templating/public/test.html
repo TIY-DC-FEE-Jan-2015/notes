@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="libs/mocha.js"></script>
+    <script src="libs/chai.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+
+  </head>
+  <body>
+
+    <div id="person-container">
+    </div>
+    
+    <script src="index.js"></script>
+
+    <script type="x-handlebars-template" id="person-template">
+      
+      <div class="person">
+        <div class="name">
+          {{ name }}
+        </div>
+        {{#if color}}
+        <div class="color">
+          {{ color }}
+        </div>
+        {{/if}}
+      </div>
+
+    </script>
+
+  </body>
+</html>

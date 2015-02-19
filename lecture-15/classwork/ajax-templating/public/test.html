@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+
+    <link href="index.css" rel="stylesheet" />
+
+  </head>
+  <body>
+
+    <div id="elevator-container">
+    </div>
+
+    <div id="bus-container">
+    </div>
+
+    <script src="index.js"></script>
+
+    <script type="x-handlebars-template" id="elevator-incident-template">
+
+      <div class="elevator-incident">
+        <div class="symptom">
+          {{ SymptomDescription }}
+        </div>
+        <div class="station">
+          {{ StationName }}
+        </div>
+        <div class="location">
+          {{ LocationDescription }}
+        </div>
+      </div>
+
+    </script>
+
+    <script type="x-handlebars-template" id="bus-incident-template">
+
+      <div class="bus-incident">
+        <div class="incident-type {{ IncidentType }}">
+          {{ IncidentType }}
+        </div>
+        <div class="incident-text">
+          <div class="incident-routes">
+
+            {{#each RoutesAffected}}
+            <span class="incident-route">
+              {{ this }}
+            </span>
+            {{/each}}
+
+          </div>
+          <div class="incident-description">
+            {{ Description }}
+          </div>
+        </div>
+      </div>
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Iron Yard Pig Thunderdome</title>
+
+    <link href="index.css" rel="stylesheet" />
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+
+  </head>
+  <body>
+
+    <div class="game-container">
+      <div class="player left">
+      </div>
+      <div class="player right">
+      </div>
+
+      <div class="buttons">
+        <button id="roll-button" class="button">Roll</button>
+        <button id="stop-button" class="button">Stop</button>
+      </div>
+
+      <div class="roll-result" id="roll-result">
+      </div>
+    </div>
+
+    <script type="x-handlebars-template" id="player-template">
+      <div class="name">
+        {{ name }}
+      </div>
+      <div class="score">
+        {{ score }}
+      </div>
+      <div class="turn-score">
+        {{ turnScore }}
+      </div>
+      <div class="active">
+      </div>
+    </script>
+  
+    <script src="dice.js"></script>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>

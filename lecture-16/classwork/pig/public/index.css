@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.game-container {
+  height: 100vh;
+  background: green;
+}
+
+.game-container.complete {
+  background: blue;
+}
+
+.roll-result {
+  color: white;
+  font-size: 150px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.button {
+  width: 50%;
+  display: block;
+  margin: 0px auto;
+  padding: 20px;
+  position: relative;
+  top: 20px;
+  font-size: 24px;
+}
+
+.player {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.player.left {
+  left: 0;
+}
+.player.right {
+  right: 0;
+}
+
+.name {
+  margin-bottom: 10px;
+  border-bottom: solid 1px white;
+}
+.score {
+  font-size: 40px;
+}
+
+.turn-score {
+  border: solid 1px;
+  padding: 5px;
+}
+
+.active {
+  height: 15px;
+  width: 100px;
+  margin-top: 30px;
+}
+
+.active.true {
+  background: yellow;
+}

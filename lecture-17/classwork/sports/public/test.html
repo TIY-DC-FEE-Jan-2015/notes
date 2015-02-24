@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Iron Yard Test Runner</title>
+
+    <link href="index.css" rel="stylesheet" />
+
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+
+  </head>
+  <body>
+
+    <div class="standings-container">
+      <table class="standings" id="standings">  
+      </table>
+    </div>
+
+    <div class="dropdown-container">
+      <select class="team winner" id="winner">
+      </select>
+
+      <select class="team loser" id="loser">
+      </select>
+
+      <button class="inputButton" id="inputButton">
+        Add Result
+      </button>
+    </div>
+
+    <script type="x-handlebars-template" id="dropdown-template">
+      <option value="{{teamName}}">{{teamName}}</option>
+    </script>
+
+    <script type="x-handlebars-template" id="header-template">
+      <tr>
+        <th>Name</th>
+        <th>Wins</th>
+        <th>Losses</th>
+        <th>Win Pct</th>
+        <th>Streak</th>
+      </tr>
+    </script>
+
+    <script type="x-handlebars-template" id="row-template">
+      <tr>
+        <td>{{teamName}}</td>
+        <td>{{wins}}</td>
+        <td>{{losses}}</td>
+        <td>{{winPct}}</td>
+        <td>{{streak}}</td>
+      </tr>
+    </script>
+
+    <script src="team.js"></script>
+    <script src="league.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

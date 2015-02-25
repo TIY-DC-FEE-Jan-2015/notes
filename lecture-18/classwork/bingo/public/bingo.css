@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0px;
+}
+
+.bingo-card {
+  border: solid 5px black;
+  height: 100vh;
+}
+
+.header-row {
+  height: 10vh;
+}
+
+.row {
+  height: 18vh;
+}
+
+.header-row .cell-text {
+  font-size: 20px;
+}
+
+.cell {
+  width: 20%;
+  display: inline-block;
+  border: solid 1px gray;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cell.free {
+  background-image: url("http://media.giphy.com/media/wiQ9N7iMkMH2o/giphy.gif");
+  background-size: cover;
+  background-position: center center;
+}
+
+.cell.free .cell-text {
+  display: none;
+}
+
+.cell-text {
+  font-size: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}

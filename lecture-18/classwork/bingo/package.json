@@ -1,0 +1,13 @@
+{
+  "name": "basic",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.10.6",
+    "express-handlebars": "^1.2.1",
+    "underscore": "^1.8.2"
+  }
+}

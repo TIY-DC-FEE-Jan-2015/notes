@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bingo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bingo-card">
+      <div class="header-row">
+        <div class="cell">
+          <div class="cell-text">B</div>
+        </div>
+        <div class="cell">
+          <div class="cell-text">I</div>
+        </div>
+        <div class="cell">
+          <div class="cell-text">N</div>
+        </div>
+        <div class="cell">
+          <div class="cell-text">G</div>
+        </div>
+        <div class="cell">
+          <div class="cell-text">O</div>
+        </div>
+        
+      </div>
+
+      {{#each rows}}
+        <div class="row">
+          <div class="cell"> 
+            <div class="cell-text">{{ b }}</div>
+          </div>
+          <div class="cell"> 
+            <div class="cell-text">{{ i }}</div>
+          </div>
+          <div class="cell {{#if hasFree}}free{{/if}}"> 
+            <div class="cell-text">{{ n }}</div>
+          </div>
+          <div class="cell"> 
+            <div class="cell-text">{{ g }}</div>
+          </div>
+          <div class="cell"> 
+            <div class="cell-text">{{ o }}</div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+  </body>
+</html>

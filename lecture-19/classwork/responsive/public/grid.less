@@ -1,0 +1,115 @@
+@row-margin: 10px;
+@gutter-width: 1%;
+@font-size: 18px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: @row-margin;
+}
+
+.row {
+  display: block;
+  margin-top: @row-margin;
+  margin-bottom: @row-margin;
+  font-size: 0px;
+}
+
+.cell {
+  display: inline-block;
+  font-size: @font-size;
+  vertical-align: top;
+  margin-right: 1%;
+  padding: @row-margin;
+}
+
+.columns1 {
+  width: ((100% / 10) * 1) - 1%;
+}
+
+.columns2 {
+  width: ((100% / 10) * 2) - 1%;
+}
+
+.columns3 {
+  width: ((100% / 10) * 3) - 1%
+}
+
+.columns4 {
+  width: ((100% / 10) * 4) - 1%
+}
+
+.columns5 {
+  width: ((100% / 10) * 5) - 1%
+}
+
+.columns6 {
+  width: ((100% / 10) * 6) - 1%
+}
+
+.columns7 {
+  width: ((100% / 10) * 7) - 1%
+}
+
+.columns8 {
+  width: ((100% / 10) * 8) - 1%
+}
+
+.columns9 {
+  width: ((100% / 10) * 9) - 1%
+}
+
+.columns10 {
+  width: ((100% / 10) * 10) - 1%;
+}
+
+.offset1 {
+  margin-left: ((100% / 10) * 1);
+}
+
+.offset2 {
+  margin-left: ((100% / 10) * 2);
+}
+
+.offset3 {
+  margin-left: ((100% / 10) * 3);
+}
+
+.offset4 {
+  margin-left: ((100% / 10) * 4);
+}
+
+.offset5 {
+  margin-left: ((100% / 10) * 5);
+}
+
+.offset6 {
+  margin-left: ((100% / 10) * 6);
+}
+
+.offset7 {
+  margin-left: ((100% / 10) * 7);
+}
+
+.offset8 {
+  margin-left: ((100% / 10) * 8);
+}
+
+.offset9 {
+  margin-left: ((100% / 10) * 9);
+}
+
+@media (max-width: 768px) {
+  .cell {
+    display: block;
+    width: 100%;
+    margin-top: @row-margin;
+    margin-bottom: @row-margin;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

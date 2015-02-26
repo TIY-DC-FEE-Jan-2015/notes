@@ -1,0 +1,36 @@
+* {
+  font-family: Helvetica;
+}
+
+.cell {
+  border: solid 1px black;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #5cb85c;
+  border: solid 1px #4cae4c;
+  font-size: 14px;
+  color: white;
+
+  &.busted {
+    background: #d9534f;
+    border: solid 1px #d43f3a;
+
+    &:hover {
+      background: darken(#d9534f, 10%)
+    }
+  }
+}
+
+button:hover {
+  cursor: pointer;
+  background: darken(#5cb85c, 10%)
+}
+
+.card {
+  display: inline-block;
+  padding: 6px 12px;
+  border: solid 1px lighten(black, 40%);
+}

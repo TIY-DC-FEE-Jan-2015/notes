@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Iron Yard Test Runner</title>
+
+    <link rel="stylesheet" href="grid.css" />
+
+    <link rel="stylesheet" href="index.css" />
+    
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="cell columns2" id="score"></div>
+        <div class="cell offset1 columns7" id="cards">
+          <div class="myRow">
+            Mine: <div id="myCards"></div>
+          </div>
+          <div class="dealerRow">
+            Dealer: <div id="dealerCards"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="hit">Hit</button>
+        <button id="stand">Stand</button>
+        <button id="restart">Restart</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script type="x-handlebars-template" id="card-template">
+      <div class="card">
+        {{ card }}
+      </div>
+    </script>
+
+  </body>
+</html>

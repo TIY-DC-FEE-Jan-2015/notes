@@ -1,0 +1,1 @@
+*{font-family:Helvetica}.cell{border:solid 1px black}button{padding:6px 12px;border-radius:5px;background:#5cb85c;border:solid 1px #4cae4c;font-size:14px;color:white}button.busted{background:#d9534f;border:solid 1px #d43f3a}button.busted:hover{background:#c9302c}button:hover{cursor:pointer;background:#449d44}.card{display:inline-block;padding:6px 12px;border:solid 1px #666}

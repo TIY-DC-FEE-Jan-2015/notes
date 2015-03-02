@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Iron Yard Test Runner</title>
+
+    <link rel="stylesheet" href="libs/mocha.css" />
+    <script src="libs/mocha.js"></script>
+    <script src="libs/chai.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+    <script src="libs/backbone.js"></script>
+
+    <link href="index.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    
+    <div id="beer-list"></div>
+
+    <div class="new-beer-container">
+      <div class="row">
+        Title: <input type="text" id="title">
+      </div>
+      <div class="row">
+        ABV: <input type="text" id="abv">
+      </div>
+      <div class="row">
+        Style: <input type="text" id="style">
+      </div>
+      <div class="row">
+        Brewery: <input type="text" id="brewery">
+      </div>
+      <button id="new-beer-button">
+        Add New Beer
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script type="x-handlebars-template" id="beer-details">
+      <div class="beer" data-beer-title="{{title}}">
+
+        <div class="title">Title: {{ title }}</div>
+        <div class="abv">ABV: {{ abv }}</div>
+        <div class="style">Style: {{ style }}</div>
+
+        {{#if brewery}}
+        <div class="brewery">Brewery: {{ brewery }}</div>
+        {{/if}}
+
+        {{#if rating}}
+        <div class="rating">Rating: {{ rating }}</div>
+        {{/if}}
+
+        <div class="sessionable">Sessionable: {{ sessionable }}</div>
+
+        <button class="remove-beer">
+          Remove
+        </button>
+      </div>
+    </script>
+
+  </body>
+</html>

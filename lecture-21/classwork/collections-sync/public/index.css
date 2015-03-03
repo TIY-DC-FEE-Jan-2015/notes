@@ -1,0 +1,27 @@
+.title, .abv {
+  display: inline-block;
+}
+
+.beer {
+  margin: 10px;
+}
+
+.row {
+  margin: 4px;
+}
+
+.delete-button {
+  background: maroon;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-button {
+  background: forestgreen;
+  color: white;
+  cursor: pointer;
+}
+
+.specific-beer {
+  display: none;
+}

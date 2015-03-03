@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+    <script src="libs/backbone.js"></script>
+
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+  
+    <div class="all-beers">
+
+      <div id="beer-list"></div>
+      <div class="add-beer-container">
+        <div class="row">
+          Title: <input id="add-title" />
+        </div>
+        <div class="row">
+          ABV: <input id="add-abv" />
+        </div>
+        <div class="row">
+          <button id="add-button">Add New Beer</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="specific-beer" id="specific-beer">
+      <div class="row">
+        Title: <input id="edit-title" />
+      </div>
+      <div class="row">
+        ABV: <input id="edit-abv" />
+      </div>
+      <div class="row">
+        <button id="edit-button">Save</button>
+        <button id="cancel-button">Cancel</button>
+      </div>
+    </div>
+
+    
+    
+    <script type="text/javascript" src="index.js"></script>
+
+    <script type="x-handlebars-template" id="beer-template">
+      <div class="beer" data-id="{{ id }}">
+        <button data-id="{{ id }}" class="delete-button">x</button>
+        <button data-id="{{ id }}" class="edit-button">E</button>
+        <div class="title">{{ title }}</div>
+        <div class="abv">({{ abv }}%)</div>
+      </div>
+    </script>
+
+  </body>
+</html>

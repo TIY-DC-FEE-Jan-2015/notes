@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Clicker</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div id="header-container">
+    </div>
+
+    <div id="coffee-click-container">
+    </div>
+
+    <div id="purchaseable-container">
+    </div>
+
+    <div id="hilarious-statement-container" class="hilarious-statement-container">
+      Here is some sample text for spacing purposes
+    </div>
+
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/backbone.js"></script>
+    <script src="libs/handlebars.js"></script>
+    
+    <script src="helpers.js"></script>
+
+    <script src="models.js"></script>
+    <script src="views.js"></script>
+    
+    <script type="x-handlebars-template" id="header-template">
+      <div class="statistic">
+        <div class="number">{{ currentCoffee }}</div>
+        <div class="words">Current Coffees</div>
+      </div>
+      <div class="statistic">
+        <div class="number">{{ totalCoffee }}</div>
+        <div class="words">Total Coffees</div>
+      </div>
+      <div class="statistic">
+        <div class="number">{{ time timePlayed }}</div>
+        <div class="words">Time Played</div>
+      </div>
+    </script>
+
+    <script type="x-handlebars-template" id="coffee-click-template">
+      <div class="coffee-button">Make a Coffee</div>
+    </script>
+
+    <script type="x-handlebars-template" id="purchaseable-template">
+      <div class="top">
+        <div class="name">{{ name }}</div>
+        <div class="quantity">Owned: {{ numberOwned }}</div>
+        <div class="cost">Cost: {{ cost }}</div>
+      </div>
+      <div class="bottom">
+        Producing {{ coffeePerSecond }} coffees per second
+      </div>
+      {{#if buyable}}
+      <button class="buy-button">Buy</button>
+      {{/if}}
+    </script>
+
+  </body>
+</html>

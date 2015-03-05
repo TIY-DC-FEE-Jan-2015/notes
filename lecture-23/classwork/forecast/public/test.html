@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="index.css" />
+
+  </head>
+  <body>
+    <div class="header-container" id="header-container"></div>
+
+    <div class="container" id="current-container"></div>
+    <div class="container" id="daily-container"></div>
+    <div class="container" id="hourly-container"></div>
+    
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/backbone.js"></script>
+    <script src="libs/handlebars.js"></script>
+    <script src="libs/moment.js"></script>
+
+    <script src="helpers.js"></script>
+    <script src="views.js"></script>
+    <script src="index.js"></script>
+
+    <script type="x-handlebars-template" id="header-template">
+      <div class="search-field">
+        <input type="text" class="latitude" placeholder="Latitude" />
+      </div>
+      <div class="search-field">
+        <input type="text" class="longitude" placeholder="Longitude" />
+      </div>
+      <button id="updateCoordsButton" class="update-button">
+        Update Coordinates
+      </button>
+    </script>
+
+    <script type="x-handlebars-template" id="current-template">
+      <div class="current-temp">
+        Currently: <div class="number">{{ temp temperature }}</div>
+      </div>
+      <div class="feels-like-temp">
+        Feels Like: <div class="number">{{ temp apparentTemperature }}</div>
+      </div>
+      <div class="description">
+        {{ summary }}
+      </div>
+    </script>
+
+    <script type="x-handlebars-template" id="hourly-template">
+      {{#each data}}
+      <div class="hour">
+        <div class="icon">{{ icon }}</div>
+        <div class="time">{{ timeDisplay time }}</div>
+        <div class="temp">{{ temp temperature }}</div>
+        <div class="summary">{{ summary }}</div>
+      </div>
+      {{/each}}
+    </script>
+
+    <script type="x-handlebars-template" id="daily-template">
+      {{#each data}}
+      <div class="day">
+        <div class="time">{{ dateDisplay time }}</div>
+        <div class="high temp">{{ temp temperatureMax }}</div>
+        <div class="low temp">{{ temp temperatureMin }}</div>
+        <div class="summary">{{ summary }}</div>
+        <div class="icon">{{ icon }}</div>
+      </div>
+      {{/each}}
+    </script>
+
+
+  </body>
+</html>

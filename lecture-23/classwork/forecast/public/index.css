@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.container {
+  border: solid 2px gray;
+  border-radius: 10px;
+  display: inline-block;
+  width: 300px;
+  margin: 15px;
+  vertical-align: top;
+  padding: 20px;
+  font-size: 0px;
+}
+
+.current-temp {
+  color: red;
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+
+.feels-like-temp {
+  color: blue;
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+
+.number {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hour, .day {
+  font-size: 14px;
+  padding: 5px 0px;
+  border-bottom: solid 1px black;
+}
+
+.icon {
+  display: none;
+}
+
+.time, .temp {
+  display: inline-block;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.temp {
+  color: #555;
+  margin-right: 10px;
+}
+
+.temp.high {
+  color: red;
+}
+
+.temp.low {
+  color: blue;
+}
+
+.summary {
+  margin-top: 4px;
+}
+
+.header-container {
+  padding: 10px;
+  background: black;
+}
+
+.search-field {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.search-field input {
+  font-size: 20px;
+  padding: 3px;
+}
+
+.update-button {
+  vertical-align: top;
+  background: green;
+  padding: 6px 16px;
+  color: white;
+}

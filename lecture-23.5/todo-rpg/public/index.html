@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoRPG</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <button id="all-tasks"> Show All Tasks </button>
+    <button id="complete-tasks"> Show Complete Tasks </button>
+    <button id="incomplete-tasks"> Show Incomplete Tasks </button>
+
+    <div id="task-list"></div>
+
+    <div id="new-task">
+      Description: <input type="text" id="new-task-description" />
+      Value: <input type="text" id="new-task-value" />
+      <button id="add-new-task"> Add New Task </button>
+    </div>
+    
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+    <script src="libs/backbone.js"></script>
+    
+    <script src="views.js"></script>
+    <script src="index.js"></script>
+
+    <script type="x-handlebars-template" id="task-template">
+      <div class="task {{#if complete}} complete {{else}} incomplete {{/if}}">
+        <div class="description"> {{ task }} </div>
+        <div class="value"> {{ value }} </div>
+        <button class="close-button"> Complete Task </button>
+        <button class="reopen-button"> Reopen Task </button>
+      </div>
+    </script>
+
+  </body>
+</html>

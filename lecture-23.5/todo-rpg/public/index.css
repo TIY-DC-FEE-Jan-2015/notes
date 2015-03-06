@@ -1,0 +1,28 @@
+body.incomplete .task.complete {
+  display: none;
+}
+
+body.complete .task.incomplete {
+  display: none;
+}
+
+.task {
+  margin: 20px;
+  border-bottom: solid 1px black;
+}
+
+.task.complete {
+  color: red;
+}
+
+.reopen-button {
+  display: none;
+}
+
+.task.complete .reopen-button {
+  display: inline;
+}
+
+.task.complete .close-button {
+  display: none;
+}

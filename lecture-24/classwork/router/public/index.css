@@ -1,0 +1,4 @@
+.name, .wins, .losses {
+  display: inline-block;
+  width: 150px;
+}

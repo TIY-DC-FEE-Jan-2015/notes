@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+    <script src="libs/backbone.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+
+  </head>
+  <body>
+
+    <div id="content"></div>
+
+    <script src="index.js"></script>
+
+    <script type="x-handlebars-template" id="standings-template">
+      <div class="standings-header">
+        <div class="name">Standings</div>
+        <div class="wins">Wins</div>
+        <div class="losses">Losses</div>
+      </div>
+      {{#each teams}}
+        <div class="team">
+          <div class="name">
+            <a href="#team/{{ name }}">{{ name }}</a>
+          </div>
+          <div class="wins">{{ wins }}</div>
+          <div class="losses">{{ losses }}</div>
+        </div>
+      {{/each}}
+
+      <div class="add">
+        <a href="#result">Add result</a>
+      </div>
+    </script>
+
+    <script type="x-handlebars-template" id="team-template">
+      <div class="back">
+        <a href="#">Back to standings</a>
+      </div>
+
+      <div class="name">{{ name }}</div>
+      <div class="wins">{{ wins }}</div>
+      <div class="losses">{{ losses }}</div>
+    </script>
+
+    <script type="x-handlebars-template" id="add-result-template">
+      <div class="player">
+        Winner: <input type="text" class="winner-name" />
+      </div>
+      <div class="player">
+        Loser: <input type="text" class="loser-name" />
+      </div>
+      <button class="add-button">Add Result</button>
+    </script>
+
+  </body>
+</html>

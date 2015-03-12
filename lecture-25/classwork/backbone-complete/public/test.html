@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Iron Yard Test Runner</title>
+
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars.js"></script>
+    <script src="libs/backbone.js"></script>
+
+    <link href="index.css" rel="stylesheet" />
+
+  </head>
+  <body>
+
+    <header>
+      <button id="header-add-item">Add Item</button>
+    </header>
+
+    <script type="x-handlebars-template" id="add-item-template">
+      <div class="row">
+        Name: <input type="text" id="item-name" />
+      </div>
+      <div class="row">
+        Description: <input type="text" id="item-description" />
+      </div>
+      <div class="row">
+        Price: <input type="text" id="item-price" />
+      </div>
+
+      <div class="row">
+        Group:
+        <select id="item-group">
+          <option value="Appetizer">Appetizer</option>
+          <option value="Entree">Entree</option>
+          <option value="Dessert">Dessert</option>
+        </select>
+      </div>
+
+      <button id="add-item-button">Add Item</button>
+    </script>
+
+    <div class="add-item-form" id="add-item-form"></div>
+    <ul class="menu" id="menu"></ul>
+    
+    <script src="index.js"></script>
+    
+    <script type="x-handlebars-template" id="menu-template">
+      <div class="name">{{ name }}</div>
+      <div class="group">{{ group }}</div>
+      <div class="description">{{ description }}</div>
+      <div class="price">{{ price }}</div>
+
+      <button class="delete-item">Delete Item</button>
+      <button class="edit-item">Edit Item</button>
+    </script>
+
+  </body>
+</html>

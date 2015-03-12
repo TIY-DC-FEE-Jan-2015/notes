@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Iron Yard Test Runner</title>
+
+    <script src="/libs/underscore.js"></script>
+    <script src="/libs/jquery.js"></script>
+    <script src="/libs/handlebars.js"></script>
+    <script src="/libs/backbone.js"></script>
+
+    
+  </head>
+  <body>
+    
+    <div id="content"></div>
+  
+    <script src="/index.js"></script>
+
+    <script type="x-handlebars-template" id="roster-template">
+      {{#each students}}
+      
+        <div class="student" data-student-id="{{ id }}">{{ name }}</div>
+      
+      {{/each}}
+    </script>
+
+    <script type="x-handlebars-template" id="student-template">
+      <div class="back">Back to Roster</div>
+
+      <div class="name">{{ name }}</div>
+      <div class="dob">{{ dob }}</div>
+      <div class="gender">{{ gender }}</div>
+    </script>
+
+  </body>
+</html>

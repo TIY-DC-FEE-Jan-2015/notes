@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="peopleList" ng-controller="PeopleController as p">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+  </head>
+  <body>
+
+    <div class="person" ng-repeat="person in p.people | orderBy: 'name'">
+      <div class="person-name">{{person.name}}</div>
+      <div class="person-city">{{person["city"]}}</div>
+    </div>
+
+    <script src="libs/angular.js"></script>
+
+    <script src="index.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div class="todoList" ng-controller="TodoController">
+      <div class="input-row">
+        Chore: <input type="text" ng-model="chore" />
+      </div>
+      <button ng-click="buttonClick()">Add Chore</button>
+
+      <div class="chore" ng-repeat="chore in choreList">
+        <div class="chore-description">{{ chore }}</div>
+        <button class="delete-chore" ng-click="deleteClick(chore)">
+          Delete Chore
+        </button> 
+      </div>
+
+    </div>
+
+    <script src="libs/angular.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>

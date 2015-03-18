@@ -1,0 +1,15 @@
+.container {
+  margin: 30px;
+}
+
+input {
+  font-size: 24px;
+}
+
+.field.error input {
+  border-color: red;
+}
+
+.field.valid input {
+  opacity: .5;
+}

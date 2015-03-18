@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="filterApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <script src="libs/angular.js"></script>
+
+  </head>
+  <body ng-controller="FilterController">
+
+    <input type="text" ng-model="str" />
+
+    {{ str | reverse:'*' | uppercase }}
+
+    <script src="index.js"></script>
+
+  </body>
+</html>

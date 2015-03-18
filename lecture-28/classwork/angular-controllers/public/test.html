@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <script src="libs/angular.js"></script>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+
+
+    <div class="form" ng-controller="FormController">
+
+      Name:
+      <div class="field" ng-class="{ error: errors.name, valid: !errors.name }">
+        <input ng-model="name" type="text" />
+      </div>
+
+      Occupation:
+      <div class="field" ng-class="{ error: errors.occupation, valid: !errors.occupation }">
+        <input ng-model="occupation" type="text" />
+      </div>
+
+      <button ng-click="activateButton()">Submit</button>
+
+    </div>
+    
+    <script src="formController.js"></script>
+    <script src="fieldController.js"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html>

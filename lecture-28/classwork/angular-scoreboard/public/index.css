@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-size: 0;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 30%;
+  font-size: 14px;
+  padding: 30px;
+  vertical-align: top;
+}
+
+.content {
+  display: inline-block;
+  width: 70%;
+  font-size: 14px;
+  padding: 30px;
+  vertical-align: top;
+}
+
+.leaderboard-row {
+  margin-bottom: 10px;
+}
+.sidebar-name {
+  display: inline-block;
+  width: 75%;
+}
+
+.sidebar-clicks {
+  display: inline-block;
+}
+
+.name {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+.big-ol-button {
+  width: 100%;
+  margin: 20px 0px;
+  font-size: 60px;
+}

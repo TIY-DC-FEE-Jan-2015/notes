@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="scoreboardApp">
+  <head>
+    <title>The Ultimate Clickdown Scoreboard</title>
+    <script src="libs/angular.js"></script>
+
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <div class="sidebar" ng-controller="SidebarController">
+
+        <ol class="leaderboard">
+          <li class="leaderboard-row" ng-repeat="user in userList">
+            <div class="sidebar-name">{{ user.username }}</div>
+            <div class="sidebar-clicks">{{ user.clicks }}</div>
+          </li>
+        </ol>
+
+      </div>
+
+      <div class="content" ng-controller="ContentController">
+
+        <input class="name" ng-model="name" />
+
+        <button class="big-ol-button" ng-click="click()">
+          Click me!!!!!
+        </button>
+
+      </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>

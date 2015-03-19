@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial;
+}
+
+.header-container {
+  border-bottom: solid 1px #CCC;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.header-content {
+  width: 976px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.header-item-container {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.header-logo {
+  display: inline-block;
+  padding: 6px 16px 6px 0px;
+  border-right: solid 1px #CCC;
+}
+
+.header-item {
+  display: inline-block;
+  padding: 12px 16px;
+  border-right: solid 1px #CCC;
+}
+
+.header-item:last-child {
+  border-right: none;
+}
+
+.content-container {
+  width: 976px;
+  margin: 20px auto;
+  position: relative;
+  font-size: 0px;
+}
+
+.left-side {
+  width: 65%;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.right-side {
+  width: 35%;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.section-title {
+  font-family: 'Gill Sans';
+  font-size: 26px;
+  color: #4c4c4c;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.headline-image {
+  position: relative;
+}
+
+.headline-image-background {
+  width: 100%;
+}
+
+.headline-overlay {
+  position: absolute;
+  width: 100%;
+  background: #333;
+  color: white;
+  bottom: 0;
+  opacity: .9;
+  padding: 15px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.headline-text {
+  margin-top: 5px;
+}
+
+.subheadlines {
+  margin-top: 15px;
+}
+
+.subheadlines a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
+
+.subheadline-item {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 7px;
+}
+
+.subheadline-item:first-child {
+  padding-left: 0;
+}
+
+.subheadline-item:last-child {
+  padding-right: 0;
+}
+
+
+.subheadline-item-image {
+  position: relative;
+}
+
+.subheadline-image {
+  height: 81px;
+  width: 100%;
+}
+
+.glyph {
+  position: absolute;
+  background: white;
+  color: black;
+  bottom: 0;
+  left: 0;
+  padding: 6px;
+}
+
+.glyph.play-button::before {
+  content: "▶";
+}
+
+.subheadline-item-text {
+
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.feature-image-container {
+  position: relative;
+}
+
+.feature-image {
+  width: 100%;
+}
+
+.feature-image-overlay {
+  position: absolute;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+  opacity: .7;
+  background: #000;
+  font-size: 16px;
+}
+
+.feature-overlay-subtitle {
+  font-size: 13px;
+}
+
+.feature-links {
+  background: black;
+  height: 50px;
+  position: relative;
+}
+
+.feature-link {
+  position: absolute;
+  padding: 15px;
+  top: 0px;
+}
+
+.feature-link:first-child {
+  left: 0;
+}
+
+.feature-link:last-child {
+  right: 0;
+}
+
+.feature-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.feature-subsection {
+  font-size: 0px;
+  background: #333;
+  
+}
+
+.feature-subsection-image {
+  width: 50%;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.feature-subsection-image img {
+  width: 100%;
+}
+.feature-subsection-text {
+  width: 50%;
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.feature-subsection-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

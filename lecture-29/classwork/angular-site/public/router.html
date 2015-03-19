@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="routerApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <script src="libs/angular.js"></script>
+    <script src="libs/angular-ui-router.js"></script>
+
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body ui-view>
+
+    <div ui-view="left">
+      
+    </div>
+    <div ui-view="right">
+
+    </div>
+
+
+    <a ui-sref="active">Click Here for active</a>
+    <a ui-sref="index">Click Here for index</a>
+    
+    <script src="router.js"></script>
+    
+  </body>
+</html>

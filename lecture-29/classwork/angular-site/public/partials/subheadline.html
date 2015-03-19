@@ -1,0 +1,13 @@
+<div class="subheadline-item" ng-repeat="item in subheadlineItems">
+
+  <a ng-href="{{ item.url }}">
+    <div class="subheadline-item-image">
+      <img class="subheadline-image" ng-src="{{ item.image }}" />
+      <div class="glyph" ng-show="item.glyph" ng-class="item.glyph" /></div>
+    </div>
+    <div class="subheadline-text">
+      {{ item.text }}
+    </div>
+  </a>
+
+</div>

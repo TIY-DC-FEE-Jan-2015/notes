@@ -1,0 +1,26 @@
+<div class="feature-header section-title">
+  {{ data.section }}
+</div>
+<div class="feature-image-container">
+  <img class="feature-image" ng-src="{{ data.image }}" />
+  <div class="feature-image-overlay">
+    <div class="feature-overlay-title">{{ data.title }}</div>
+    <div class="feature-overlay-subtitle">{{ data.subtitle }}</div>
+  </div>
+</div>
+<div class="feature-subsection" ng-show="data.subsection">
+  <div class="feature-subsection-image">
+    <img ng-src="{{ data.subsection.image }}" />
+  </div>
+  <div class="feature-subsection-text">
+    <div class="feature-subsection-title">
+      {{ data.subsection.title }}
+    </div>
+    {{ data.subsection.text }}
+  </div>
+</div>
+<div class="feature-links">
+  <div class="feature-link" ng-repeat="link in data.links">
+    <a ng-href="{{ link.url }}"> {{ link.text }} </a>
+  </div>
+</div>

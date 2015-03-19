@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="newsApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <script src="libs/angular.js"></script>
+    <script src="libs/angular-ui-router.js"></script>
+
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body ui-view>
+
+    <div ui-view="header" class="header-container" ng-controller="HeaderController">
+    </div>
+
+    <div class="content-container">
+      <div class="left-side">
+        
+        <div ui-view="headline" class="headline" ng-controller="HeadlineController">
+        </div>
+
+        <div ui-view="subheadline" class="subheadlines" ng-controller="SubheadlineController">
+        </div>
+
+      </div>
+      
+      <div class="right-side">
+
+        <div ui-view="america"  class="feature" ng-controller="AmericaController">
+        </div>
+
+        <div ui-view="world"  class="feature" ng-controller="WorldController">
+        </div>
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>

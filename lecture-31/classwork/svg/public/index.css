@@ -1,0 +1,29 @@
+svg {
+  width: 500px;
+  height: 300px;
+  border: solid 1px black;
+}
+
+.path {
+  fill: none;
+  stroke: black;
+  stroke-width: 3px;
+}
+
+.path:hover {
+  stroke: green;
+}
+
+.red {
+  fill: rgb(220, 4, 40);
+}
+
+.hover:hover {
+  fill: rgb(0, 255, 50);
+}
+
+.polygon {
+  fill: none;
+  stroke: blue;
+  stroke-width: 4px;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="mockModule">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <script src="libs/angular.js"></script>
+
+  </head>
+  <body>
+
+    <div ng-controller="MockController">
+      <input type="text" ng-model="input" ng-keyup="resetOutput()" />
+      {{ output | mockFilter }}
+    </div>
+
+    <script src="testModule.js"></script>
+    
+  </body>
+</html>

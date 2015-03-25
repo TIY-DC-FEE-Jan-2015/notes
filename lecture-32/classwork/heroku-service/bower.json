@@ -1,0 +1,21 @@
+{
+  "name": "service",
+  "version": "0.0.0",
+  "authors": [
+    "Kyle Hill <kylehill@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "moment": "~2.9.0",
+    "hogan": "~3.0.2",
+    "d3": "~3.5.5"
+  }
+}
